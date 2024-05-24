@@ -1,9 +1,7 @@
 import SwiftUI
-
 struct ContentView: View {
     @State private var name: String = ""
     @State private var age: Int = 18
-
     var body: some View {
         NavigationView {
             Form {
@@ -13,7 +11,6 @@ struct ContentView: View {
                 }
                 Section {
                     Button("Enregistrer") {
-                        // Action pour enregistrer les informations
                         print("Informations enregistrées")
                     }
                 }
