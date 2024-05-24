@@ -29,7 +29,7 @@ struct ContentView: View {
                         .foregroundColor(.blue)
                 }
             }
-            .navigationTitle("Calculateur d'IMC")
+            .navigationTitle(" Calculateur d'IMC")
         }
     }
     
