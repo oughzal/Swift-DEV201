@@ -1,0 +1,60 @@
+import SwiftUI
+
+// Modèle pour les entrées de journal
+struct JournalEntry: Identifiable {
+    var id = UUID()
+    var title: String
+    var content: String
+}
+
+// Vue principale de l'application
+struct ContentView: View {
+    @State private var journalEntries: [JournalEntry] = []
+    @State private var newEntryTitle: String = ""
+    @State private var newEntryContent: String = ""
+
+    var body: some View {
+        NavigationView {
+            List {
+                Section(header: Text("Nouvelle Entrée")) {
+                    TextField("Titre", text: $newEntryTitle)
+                    TextField("Contenu", text: $newEntryContent)
+                    Button("Ajouter") {
+                        addJournalEntry()
+                    }
+                }
+                
+                Section(header: Text("Entrées Précédentes")) {
+                    ForEach(journalEntries) { entry in
+                        VStack(alignment: .leading) {
+                            Text(entry.title).font(.headline)
+                            Text(entry.content).font(.subheadline)
+                        }
+                    }
+                    .onDelete(perform: deleteEntry)
+                }
+            }
+            .navigationTitle("Journal de Bord")
+        }
+    }
+
+    func addJournalEntry() {
+        let newEntry = JournalEntry(title: newEntryTitle, content: newEntryContent)
+        journalEntries.append(newEntry)
+        newEntryTitle = ""
+        newEntryContent = ""
+    }
+
+    func deleteEntry(at offsets: IndexSet) {
+        journalEntries.remove(atOffsets: offsets)
+    }
+}
+
+@main
+struct JournalApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}
