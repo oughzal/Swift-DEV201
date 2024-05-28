@@ -1,4 +1,4 @@
-class Article{
+struct Article{
     private var _nom : String
      var nom:String{
         get{
