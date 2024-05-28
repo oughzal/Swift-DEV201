@@ -18,9 +18,9 @@ func longestWord(_ ch:String)->String{
 
 /*
 Structure Plat : 
-•	Propriétés :  nom (String), prix (Double), ingrédients ([String]) 
-•	Initialiseur(constructeur) :  avec toutes les propriétés
-•	Méthode description() : Retourne une chaîne de caractères qui décrit le plat, incluant le nom, le prix et les ingrédients.
+    •	Propriétés :  nom (String), prix (Double), ingrédients ([String]) 
+    •	Initialiseur(constructeur) :  avec toutes les propriétés
+    •	Méthode description() : Retourne une chaîne de caractères qui décrit le plat, incluant le nom, le prix et les ingrédients.
 Q3. réer la structure plat
 */
 struct Plat{
@@ -38,9 +38,9 @@ struct Plat{
 
 /*
 Classe Commande : 
-•	Propriétés :  numéro (auto), plats
-•	Méthode ajouterPlat(plat) : Ajoute un plat à la commande.
-•	Méthode calculerTotal() : Calcule le prix total de la commande.
+    •	Propriétés :  numéro (auto), plats
+    •	Méthode ajouterPlat(plat) : Ajoute un plat à la commande.
+    •	Méthode calculerTotal() : Calcule le prix total de la commande.
 Q4.	Créer la classe commande
 */
 class Commande{
@@ -65,11 +65,11 @@ class Commande{
 
 /*
 Classe GestionRestaurant :
-•	Propriétés :  commandes, menu ([String:Plat])
-•	Méthode ajouterCommande(commande) : Enregistre une nouvelle commande.
-•	Méthode ajouterPlatAuMenu(plat) : Ajoute un nouveau plat au menu.
-•	Méthode afficherMenu() : Affiche tous les plats disponibles.
-•	Méthode afficherCommandes() : Affiche toutes les commandes avec leur total.
+    •	Propriétés :  commandes, menu ([String:Plat])
+    •	Méthode ajouterCommande(commande) : Enregistre une nouvelle commande.
+    •	Méthode ajouterPlatAuMenu(plat) : Ajoute un nouveau plat au menu.
+    •	Méthode afficherMenu() : Affiche tous les plats disponibles.
+    •	Méthode afficherCommandes() : Affiche toutes les commandes avec leur total.
 Q5.	Créer la classe GestionRestaurant
 */
 class GestionRestaurant{
