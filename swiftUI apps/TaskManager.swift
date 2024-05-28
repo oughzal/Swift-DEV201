@@ -1,93 +1,60 @@
 import SwiftUI
 
-// Modèles
+// Modèle pour les tâches
 struct Task: Identifiable {
-    let id = UUID()
+    var id = UUID()
     var description: String
     var isCompleted: Bool = false
 }
 
-struct Contact: Identifiable {
-    var id = UUID()
-    var name: String
-    var email: String
-    var phoneNumber: String
-}
-
-// Vue principale
+// Vue principale de l'application
 struct ContentView: View {
-    @State private var tasks: [Task] = []
-    @State private var newTaskDescription: String = ""
-    
-    @State private var contacts: [Contact] = []
-    @State private var newName: String = ""
-    @State private var newEmail: String = ""
-    @State private var newPhoneNumber: String = ""
+    @State private var tasks = [
+        Task(description: "Apprendre SwiftUI", isCompleted: false),
+        Task(description: "Faire les courses", isCompleted: false),
+        Task(description: "Appeler John", isCompleted: false)
+    ]
 
     var body: some View {
         NavigationView {
             List {
-                // Section pour les tâches
-                Section(header: Text("Ajouter une nouvelle tâche")) {
-                    HStack {
-                        TextField("Nouvelle tâche", text: $newTaskDescription)
-                        Button(action: addTask) {
-                            Label("Ajouter", systemImage: "plus.circle.fill")
-                        }
-                    }
-                }
-                ForEach(tasks) { task in
-                    Text(task.description)
+                ForEach($tasks) { $task in
+                    TaskRow(task: $task)
                 }
                 .onDelete(perform: deleteTask)
-
-                // Section pour les contacts
-                Section(header: Text("Ajouter un nouveau contact")) {
-                    VStack {
-                        TextField("Nom", text: $newName)
-                        TextField("Email", text: $newEmail)
-                        TextField("Téléphone", text: $newPhoneNumber)
-                        Button("Ajouter Contact", action: addContact)
-                    }
-                }
-                ForEach(contacts) { contact in
-                    VStack(alignment: .leading) {
-                        Text(contact.name).font(.headline)
-                        Text(contact.email).font(.subheadline)
-                        Text(contact.phoneNumber).font(.subheadline)
-                    }
-                }
-                .onDelete(perform: deleteContact)
             }
-            .navigationTitle("Gestionnaire Multifonctions")
+            .navigationTitle("Gestionnaire de Tâches")
+            .toolbar {
+                EditButton()
+            }
         }
-    }
-
-    func addTask() {
-        let newTask = Task(description: newTaskDescription)
-        tasks.append(newTask)
-        newTaskDescription = ""
     }
 
     func deleteTask(at offsets: IndexSet) {
         tasks.remove(atOffsets: offsets)
     }
+}
 
-    func addContact() {
-        let newContact = Contact(name: newName, email: newEmail, phoneNumber: newPhoneNumber)
-        contacts.append(newContact)
-        newName = ""
-        newEmail = ""
-        newPhoneNumber = ""
-    }
+// Vue pour une ligne de tâche dans la liste
+struct TaskRow: View {
+    @Binding var task: Task
 
-    func deleteContact(at offsets: IndexSet) {
-        contacts.remove(atOffsets: offsets)
+    var body: some View {
+        HStack {
+            Image(systemName: task.isCompleted ? "checkmark.circle.fill" : "circle")
+                .foregroundColor(task.isCompleted ? .green : .gray)
+                .onTapGesture {
+                    task.isCompleted.toggle()  // Basculer le statut de complétion de la tâche
+                }
+            Text(task.description)
+                .strikethrough(task.isCompleted, color: .gray)
+                .foregroundColor(task.isCompleted ? .gray : .black)
+        }
     }
 }
 
 @main
-struct CombinedApp: App {
+struct TaskManagerApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
