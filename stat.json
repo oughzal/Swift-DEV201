@@ -1,0 +1,352 @@
+[
+    {
+        "station": "Al Rahma",
+        "tel": "05374455667",
+        "AvecAdditif": true,
+        "prixgasoil": 14.34,
+        "prixessence": 17.21
+    },
+    {
+        "station": "Annasr",
+        "tel": "05371122334",
+        "AvecAdditif": true,
+        "prixgasoil": 15.31,
+        "prixessence": 17.27
+    },
+    {
+        "station": "Al Fajr",
+        "tel": "05374455667",
+        "AvecAdditif": true,
+        "prixgasoil": 16.57,
+        "prixessence": 17.81
+    },
+    {
+        "station": "Al Quds",
+        "tel": "05374455667",
+        "AvecAdditif": false,
+        "prixgasoil": 15.15,
+        "prixessence": 16.61
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05379234821",
+        "AvecAdditif": true,
+        "prixgasoil": 16.73,
+        "prixessence": 16.72
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05375567891",
+        "AvecAdditif": false,
+        "prixgasoil": 16.26,
+        "prixessence": 17.42
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05379234821",
+        "AvecAdditif": true,
+        "prixgasoil": 16.24,
+        "prixessence": 16.92
+    },
+    {
+        "station": "Al Rahma",
+        "tel": "05372234567",
+        "AvecAdditif": true,
+        "prixgasoil": 15.64,
+        "prixessence": 17.24
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05379234821",
+        "AvecAdditif": false,
+        "prixgasoil": 16.15,
+        "prixessence": 17.3
+    },
+    {
+        "station": "Al Najah",
+        "tel": "05377476121",
+        "AvecAdditif": true,
+        "prixgasoil": 16.0,
+        "prixessence": 16.32
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05373772121",
+        "AvecAdditif": false,
+        "prixgasoil": 16.87,
+        "prixessence": 17.88
+    },
+    {
+        "station": "Al Salam",
+        "tel": "05376678923",
+        "AvecAdditif": false,
+        "prixgasoil": 15.82,
+        "prixessence": 17.23
+    },
+    {
+        "station": "Al Noor",
+        "tel": "05376678923",
+        "AvecAdditif": false,
+        "prixgasoil": 16.63,
+        "prixessence": 17.9
+    },
+    {
+        "station": "Al Rahma",
+        "tel": "05373772121",
+        "AvecAdditif": true,
+        "prixgasoil": 16.35,
+        "prixessence": 16.88
+    },
+    {
+        "station": "Al Salam",
+        "tel": "05379923456",
+        "AvecAdditif": true,
+        "prixgasoil": 14.39,
+        "prixessence": 16.56
+    },
+    {
+        "station": "Al Fajr",
+        "tel": "05376678923",
+        "AvecAdditif": false,
+        "prixgasoil": 14.93,
+        "prixessence": 18.73
+    },
+    {
+        "station": "Al Noor",
+        "tel": "05375567891",
+        "AvecAdditif": false,
+        "prixgasoil": 16.92,
+        "prixessence": 18.74
+    },
+    {
+        "station": "Al Rahma",
+        "tel": "05375567891",
+        "AvecAdditif": false,
+        "prixgasoil": 14.72,
+        "prixessence": 17.3
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05372234567",
+        "AvecAdditif": false,
+        "prixgasoil": 14.58,
+        "prixessence": 16.39
+    },
+    {
+        "station": "Al Ikhlas",
+        "tel": "05372234567",
+        "AvecAdditif": false,
+        "prixgasoil": 15.09,
+        "prixessence": 17.71
+    },
+    {
+        "station": "Al Najah",
+        "tel": "05377476121",
+        "AvecAdditif": true,
+        "prixgasoil": 14.91,
+        "prixessence": 17.81
+    },
+    {
+        "station": "Al Quds",
+        "tel": "05379234821",
+        "AvecAdditif": false,
+        "prixgasoil": 14.51,
+        "prixessence": 17.48
+    },
+    {
+        "station": "Al Fajr",
+        "tel": "05371122334",
+        "AvecAdditif": true,
+        "prixgasoil": 16.57,
+        "prixessence": 16.97
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05373367521",
+        "AvecAdditif": true,
+        "prixgasoil": 16.52,
+        "prixessence": 17.15
+    },
+    {
+        "station": "Al Quds",
+        "tel": "05379234821",
+        "AvecAdditif": true,
+        "prixgasoil": 15.35,
+        "prixessence": 16.36
+    },
+    {
+        "station": "Al Rahma",
+        "tel": "05371122334",
+        "AvecAdditif": false,
+        "prixgasoil": 16.61,
+        "prixessence": 17.11
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05373772121",
+        "AvecAdditif": true,
+        "prixgasoil": 14.37,
+        "prixessence": 18.11
+    },
+    {
+        "station": "Al Quds",
+        "tel": "05375567891",
+        "AvecAdditif": false,
+        "prixgasoil": 15.9,
+        "prixessence": 18.55
+    },
+    {
+        "station": "Annasr",
+        "tel": "05371122334",
+        "AvecAdditif": true,
+        "prixgasoil": 16.94,
+        "prixessence": 16.4
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05373772121",
+        "AvecAdditif": true,
+        "prixgasoil": 16.02,
+        "prixessence": 18.09
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05371122334",
+        "AvecAdditif": false,
+        "prixgasoil": 16.01,
+        "prixessence": 16.51
+    },
+    {
+        "station": "Annasr",
+        "tel": "05371122334",
+        "AvecAdditif": true,
+        "prixgasoil": 16.49,
+        "prixessence": 18.93
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05376678923",
+        "AvecAdditif": true,
+        "prixgasoil": 16.03,
+        "prixessence": 18.65
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05379923456",
+        "AvecAdditif": true,
+        "prixgasoil": 15.62,
+        "prixessence": 18.55
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05374455667",
+        "AvecAdditif": false,
+        "prixgasoil": 16.41,
+        "prixessence": 18.81
+    },
+    {
+        "station": "Al Fajr",
+        "tel": "05379234821",
+        "AvecAdditif": true,
+        "prixgasoil": 15.12,
+        "prixessence": 17.42
+    },
+    {
+        "station": "Al Quds",
+        "tel": "05374455667",
+        "AvecAdditif": true,
+        "prixgasoil": 14.28,
+        "prixessence": 18.63
+    },
+    {
+        "station": "Al Rahma",
+        "tel": "05379923456",
+        "AvecAdditif": true,
+        "prixgasoil": 15.61,
+        "prixessence": 17.82
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05379234821",
+        "AvecAdditif": false,
+        "prixgasoil": 15.06,
+        "prixessence": 16.61
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05379923456",
+        "AvecAdditif": true,
+        "prixgasoil": 16.83,
+        "prixessence": 18.44
+    },
+    {
+        "station": "Annasr",
+        "tel": "05375567891",
+        "AvecAdditif": true,
+        "prixgasoil": 15.17,
+        "prixessence": 18.4
+    },
+    {
+        "station": "Al Massira",
+        "tel": "05377476121",
+        "AvecAdditif": false,
+        "prixgasoil": 15.07,
+        "prixessence": 17.28
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05375567891",
+        "AvecAdditif": true,
+        "prixgasoil": 15.22,
+        "prixessence": 18.57
+    },
+    {
+        "station": "Al Noor",
+        "tel": "05379234821",
+        "AvecAdditif": false,
+        "prixgasoil": 15.8,
+        "prixessence": 18.45
+    },
+    {
+        "station": "Al Fajr",
+        "tel": "05374455667",
+        "AvecAdditif": false,
+        "prixgasoil": 14.93,
+        "prixessence": 18.77
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05371122334",
+        "AvecAdditif": false,
+        "prixgasoil": 14.04,
+        "prixessence": 16.2
+    },
+    {
+        "station": "Al Ikhlas",
+        "tel": "05379923456",
+        "AvecAdditif": false,
+        "prixgasoil": 15.19,
+        "prixessence": 18.08
+    },
+    {
+        "station": "Annasr",
+        "tel": "05377476121",
+        "AvecAdditif": true,
+        "prixgasoil": 14.24,
+        "prixessence": 18.59
+    },
+    {
+        "station": "Al Amal",
+        "tel": "05375567891",
+        "AvecAdditif": true,
+        "prixgasoil": 16.46,
+        "prixessence": 16.07
+    },
+    {
+        "station": "Al Quds",
+        "tel": "05372234567",
+        "AvecAdditif": false,
+        "prixgasoil": 15.26,
+        "prixessence": 18.75
+    }
+]
